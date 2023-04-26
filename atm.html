@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debit Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .credit-card {
+            width: 450px;
+            height: 300px;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,16,0.40948879551820727) 0%, rgba(0,212,255,1) 100%);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: rgba(0, 0, 0, 0.2) 3px 6px 10px;
+        }
+
+        .credit-card:hover {
+            box-shadow: rgba(0, 0, 0, 0.2) 12px 24px 30px;
+        }
+
+        .card-logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: left;
+            padding-top: 20px;
+            padding-left: 18px;
+            font-family: 'Noto Serif', serif;
+            letter-spacing: 3px;
+        }
+
+        .bank-logo {
+            width: 166px;
+            position: absolute;
+            top: 26px;
+            right: 29px;
+        }
+
+        .card-logo0 {
+            width: 89px;
+            position: absolute;
+            top: 86px;
+            right: 11px;
+        }
+
+        .card-chip {
+            width: 113px;
+            position: absolute;
+            top: 40px;
+            left: 29px;
+        }
+
+        .card-number {
+            font-size: 24px;
+            font-weight: bold;
+            position: absolute;
+            top: 150px;
+            left: 20px;
+            letter-spacing: 1px;
+        }
+
+        .card-holder {
+            font-size: 16px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+            text-transform: uppercase;
+            font-family: 'Noto Serif', serif;
+            letter-spacing: 2px;
+        }
+
+        .valid {
+            font-size: 10px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 97px;
+            right: 356px;
+            text-transform: uppercase;
+            font-family: 'Noto Serif', serif;
+        }
+
+        .card-expiry {
+            font-size: 16px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 80px;
+            right: 370px;
+            font-family: 'Noto Serif', serif;
+        }
+
+        .card-logo1 {
+            width: 81px;
+            position: absolute;
+            top: 223px;
+            left: 340px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="credit-card">
+            <div class="card-front">
+              <div class="card-logo">PLATINUM</div>
+              <div>
+                <img src="hdfc.png" alt="Bank Logo" class="bank-logo">
+              </div>
+              <div>
+                <img src="wifi.png" alt="Wifi" class="card-logo0">
+              </div>
+              <div>
+                <img src="chip.png" alt="Card Chip" class="card-chip">
+              </div>
+              <div class="card-number">1111 2222 3333 4444</div>
+              <div class="card-holder">Shyam Kumar</div>
+              <div class="valid">Valid Thru</div>
+              <div class="card-expiry">11/22</div>
+            </div>
+            <div>
+              <img src="mcard.png" alt="Master Card" class="card-logo1">
+            </div>
+        </div>
+    </div>      
+</body>
+</html>
